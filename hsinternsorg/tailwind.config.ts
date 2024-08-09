@@ -14,7 +14,13 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],  theme: {
-    // rest of the code
+    extend: {
+      fontFamily: {
+        sans: ['google-font', 'sans-serif'],
+        serif: ['apple-font', 'San Francisco'],
+      },
+    },
+
   },
   plugins: [
     // rest of the code

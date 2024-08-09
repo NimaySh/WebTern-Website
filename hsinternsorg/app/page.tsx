@@ -1,9 +1,9 @@
 import Image from "next/image";
-import Hero from "@/components/Hero"
+import Hero from "@/components/Hero";
 
 export default function Home() {
   return (
-     <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50 font-sans">
       {/* Navigation Bar */}
       <nav className="bg-black text-white p-4">
         <div className="container mx-auto flex justify-between items-center">
