@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Hero from "@/components/Hero";
+import { Boxes } from "@/components/ui/background-boxes";
+import { cn } from "@/lib/utils";
 
 export default function Home() {
   return (
@@ -9,18 +11,22 @@ export default function Home() {
         <div className="container mx-auto flex justify-between items-center">
           <div className="flex space-x-4">
             <a href="#" className="hover:underline">Home</a>
-            <a href="#" className="hover:underline">Apply</a>
             <a href="#" className="hover:underline">About</a>
+            <a href="#" className="hover:underline">Apply</a>
             <a href="#" className="hover:underline">Contact</a>
           </div>
         </div>
       </nav>
+    
 
       {/* Hero Section */}
+      <div className="h-96 relative w-full overflow-hidden bg-white flex flex-col items-center justify-center rounded-lg">
+      <div className="absolute inset-0 w-full h-full bg-white z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none" />
+ 
       <div className="container mx-auto px-4 py-16">
+      <Boxes />
         <div className="grid grid-cols-3 gap-4 mb-12">
           <div className="col-span-1 flex justify-center items-center">
-            <div className="bg-green-500 w-12 h-12"></div>
           </div>
           <div className="col-span-1 text-center">
             <h1 className="text-4xl font-bold">
@@ -31,16 +37,16 @@ export default function Home() {
             <p className="text-lg mt-4">
               By offering them hands-on experiences
             </p>
-            <button className="mt-8 px-6 py-3 bg-black text-white font-semibold rounded-full hover:bg-gray-800">
+            <button className="mt-8 px-6 py-3 bg-black text-white 
+            font-semibold rounded-full hover:bg-gray-800">
               Apply Now <span className="ml-2">→</span>
             </button>
           </div>
           <div className="col-span-1 flex justify-center items-center">
-            <div className="bg-red-500 w-12 h-12"></div>
           </div>
         </div>
       </div>
-
+      </div>
       {/* Cards Section */}
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-3 gap-4 mb-8">
