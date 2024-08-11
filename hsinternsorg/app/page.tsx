@@ -1,83 +1,53 @@
-import Image from "next/image";
-import Hero from "@/components/Hero";
-import { Boxes } from "@/components/ui/background-boxes";
-import { cn } from "@/lib/utils";
+import React from "react";
+import { FloatingNav } from "@/app/components/ui/floating-navbar"; // Adjust the path if necessary
+import { IconHome, IconMessage, IconUser } from "@tabler/icons-react";
+
+const navItems = [
+  {
+    name: "Home",
+    link: "/",
+    icon: <IconHome className="h-4 w-4 text-neutral-500 dark:text-white" />,
+  },
+  {
+    name: "About",
+    link: "/about",
+    icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
+  },
+  {
+    name: "Contact",
+    link: "/contact",
+    icon: <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />,
+  },
+];
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-gray-50 font-sans">
-      {/* Navigation Bar */}
-      <nav className="bg-black text-white p-4">
-        <div className="container mx-auto flex justify-between items-center">
-          <div className="flex space-x-4">
-            <a href="#" className="hover:underline">Home</a>
-            <a href="#" className="hover:underline">About</a>
-            <a href="#" className="hover:underline">Apply</a>
-            <a href="#" className="hover:underline">Contact</a>
-          </div>
-        </div>
-      </nav>
-    
+      {/* Floating Navigation Bar */}
+      <FloatingNav navItems={navItems} />
 
-      {/* Hero Section */}
-      <div className="h-96 relative w-full overflow-hidden bg-white flex flex-col items-center justify-center rounded-lg">
-      <div className="absolute inset-0 w-full h-full bg-white z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none" />
- 
-      <div className="container mx-auto px-4 py-16">
-      <Boxes />
-        <div className="grid grid-cols-3 gap-4 mb-12">
-          <div className="col-span-1 flex justify-center items-center">
-          </div>
-          <div className="col-span-1 text-center">
-            <h1 className="text-4xl font-bold">
-              Teaching students life
-              <br />
+      <div className="h-[50rem] w-full bg-white bg-grid-black/[0.2] relative flex items-center justify-center">
+        {/* Radial gradient for the container to give a faded look */}
+        <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_50%,black)]"></div>
+        
+        {/* Hero Section Content */}
+        <div className="relative z-20 text-center px-4 py-16">
+          <h1 className="md:text-7xl text-4xl font-bold">
+            Teaching students life
+            <br />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-black via-gray-800 to-blue-500">
               changing skills.
-            </h1>
-            <p className="text-lg mt-4">
-              By offering them hands-on experiences
-            </p>
-            <button className="mt-8 px-6 py-3 bg-black text-white 
-            font-semibold rounded-full hover:bg-gray-800">
-              Apply Now <span className="ml-2">→</span>
+            </span>
+          </h1>
+          <p className="mt-4 text-lg text-neutral-700">
+            By offering them hands-on experiences.
+          </p>
+          
+          {/* Apply Now Button */}
+          <div className="mt-8 flex justify-center">
+            <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-white transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+              <span>Apply Now<span className="ml-2">→</span></span>
             </button>
-          </div>
-          <div className="col-span-1 flex justify-center items-center">
-          </div>
-        </div>
-      </div>
-      </div>
-      {/* Cards Section */}
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-3 gap-4 mb-8">
-          {/* Card 1 */}
-          <div className="bg-black text-white p-6 rounded-lg shadow-lg">
-            <h2 className="text-2xl font-bold mb-4">
-              An easier way to get an internship.
-            </h2>
-            <p className="text-md">
-              Loreskdajkldja kdjs ksjdk asjk dasjkl dsajkl jgkds jfk djksd fhjd jdsh fjd hdfjs hfjs hdjsk
-            </p>
-          </div>
-
-          {/* Card 2 */}
-          <div className="bg-red-500 text-white p-6 rounded-lg shadow-lg">
-            <h2 className="text-2xl font-bold mb-4">
-              Empowering students to research
-            </h2>
-            <p className="text-md">
-              Loreskdajkldja kdjs ksjdk asjk dasjkl dsajkl jgkds jfk djksd fhjd jdsh fjd hdfjs hfjs hdjsk
-            </p>
-          </div>
-
-          {/* Card 3 */}
-          <div className="bg-blue-500 text-white p-6 rounded-lg shadow-lg">
-            <h2 className="text-2xl font-bold mb-4">
-              An easier way to get an internship.
-            </h2>
-            <p className="text-md">
-              Loreskdajkldja kdjs ksjdk asjk dasjkl dsajkl jgkds jfk djksd fhjd jdsh fjd hdfjs hfjs hdjsk
-            </p>
           </div>
         </div>
       </div>
