@@ -1,32 +1,10 @@
 import React from "react";
-import { FloatingNav } from "@/app/components/ui/floating-navbar"; // Adjust the path if necessary
-import { IconHome, IconMessage, IconUser } from "@tabler/icons-react";
 import { HoverEffect } from "@/app/components/ui/card-hover-effect"; // Adjust the path if necessary
 
-const navItems = [
-  {
-    name: "Home",
-    link: "/",
-    icon: <IconHome className="h-4 w-4 text-neutral-500 dark:text-white" />,
-  },
-  {
-    name: "About",
-    link: "/about",
-    icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
-  },
-  {
-    name: "Contact",
-    link: "/contact",
-    icon: <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />,
-  },
-];
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-gray-50 font-sans">
-      {/* Floating Navigation Bar */}
-      <FloatingNav navItems={navItems} />
-
       <div className="h-[50rem] w-full bg-white bg-grid-black/[0.2] relative flex items-center justify-center">
         {/* Radial gradient for the container to give a faded look */}
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_35%,black)]"></div>
