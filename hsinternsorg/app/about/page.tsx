@@ -28,7 +28,7 @@ export default function About() {
         Our Mission
       </h2>
       <p className="mt-4 text-left text-base/6 text-neutral-200">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente consectetur soluta ab est. Ea, dolorum quae esse recusandae facilis tempore quos quis quibusdam officiis quod iusto excepturi doloremque praesentium. Rem.
+        Our mission is to teach students life changing 
       </p>
     </div>
   </WobbleCard>

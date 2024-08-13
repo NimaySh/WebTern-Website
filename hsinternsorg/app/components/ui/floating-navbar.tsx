@@ -1,38 +1,40 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 
-export const FloatingNav = ({
-  navItems,
-  className,
-}: {
+interface FloatingNavProps {
   navItems: {
     name: string;
     link: string;
     icon?: JSX.Element;
   }[];
   className?: string;
+  onNavClick: () => void; // Added prop for handling click
+}
+
+export const FloatingNav: React.FC<FloatingNavProps> = ({
+  navItems,
+  className,
+  onNavClick
 }) => {
-  const [visible, setVisible] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
+  const [visible, setVisible] = React.useState(true);
+  const [lastScrollY, setLastScrollY] = React.useState(0);
 
   const handleScroll = () => {
     const currentScrollY = window.scrollY;
 
     if (currentScrollY > lastScrollY) {
-      // Scrolling down
       setVisible(false);
     } else {
-      // Scrolling up
       setVisible(true);
     }
 
     setLastScrollY(currentScrollY);
   };
 
-  useEffect(() => {
+  React.useEffect(() => {
     window.addEventListener("scroll", handleScroll);
 
     return () => {
@@ -67,6 +69,7 @@ export const FloatingNav = ({
             <Link
               key={`link=${idx}`}
               href={navItem.link}
+              onClick={onNavClick} // Call handler on click
               className={cn(
                 "relative dark:text-neutral-50 items-center flex space-x-2 text-lg font-medium text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500"
               )}
