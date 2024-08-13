@@ -15,7 +15,7 @@ export default function About() {
             About Us
           </h1>
           <p className="mt-3.5 text-lg text-neutral-700">
-            Learn more about our mission, values, and our team.
+            Learn more about our mission and team.
           </p>
         </div>
       </div>

@@ -21,8 +21,8 @@ export default function Contact() {
       </div>
 
       {/* Down Arrow Icon */} 
-      <div className="flex justify-center" style={{ marginTop: '-3rem' }}> 
-        <FiChevronDown className="text-neutral-700 animate-bounce" size={24} /> 
+      <div className="flex justify-center" style={{ marginTop: '-4rem' }}> 
+        <FiChevronDown className="text-neutral-700 animate-bounce" size={32} /> 
       </div>
 
       {/* Contact Form Section */}
