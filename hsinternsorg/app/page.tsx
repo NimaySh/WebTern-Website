@@ -13,14 +13,14 @@ export default function Home() {
         {/* Hero Section Content */}
         <div className="relative z-20 text-center px-4 py-16">
           <h1 className="text-neutral-900 md:text-7xl text-4xl font-bold">
-            Teaching students life
+            Teaching students 
             <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-neutral-900 via-gray-800 to-blue-500">
-              changing skills.
+              web-development.
             </span>
           </h1>
           <p className="mt-4 text-lg text-neutral-700">
-            By offering them hands-on experiences.
+            By offering them real world experiences.
           </p>
 
           {/* Apply Now Button */}
