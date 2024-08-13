@@ -1,6 +1,5 @@
 import React from "react";
-import { FiChevronDown } from "react-icons/fi"; // Importing the down arrow icon
-
+import { FiChevronDown } from 'react-icons/fi';
 export default function Contact() {
   return (
     <div className="min-h-screen bg-gray-50 font-sans">
@@ -12,7 +11,7 @@ export default function Contact() {
         <div className="relative z-20 text-center px-4 py-16">
           <h1 className="text-neutral-900 md:text-7xl text-4xl font-bold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-neutral-900 via-gray-800 to-blue-500">
-              We’d love to hear from you.
+              We’d Love to Hear From You.
             </span>
           </h1>
           <p className="mt-4 text-lg text-neutral-700">
@@ -21,10 +20,10 @@ export default function Contact() {
         </div>
       </div>
 
-      {/* Down Arrow Icon */}
-      <div className="flex justify-center" style={{ marginTop: '-3rem' }}>
-             <FiChevronDown className="text-neutral-700 animate-bounce" size={24} />
-          </div>
+      {/* Down Arrow Icon */} 
+      <div className="flex justify-center" style={{ marginTop: '-3rem' }}> 
+        <FiChevronDown className="text-neutral-700 animate-bounce" size={24} /> 
+      </div>
 
       {/* Contact Form Section */}
       <div className="max-w-5xl mx-auto px-8 py-16">
@@ -59,12 +58,12 @@ export default function Contact() {
             rows={6}
             required
           ></textarea>
-         
-         <div className="mt-8 flex justify-left">
-            <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-neutral-900 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-white transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
-              <span>Send Message<span className="ml-2">→</span></span>
-            </button>
-          </div> 
+          <button
+            type="submit"
+            className="inline-flex h-12 items-center justify-center rounded-md border border-neutral-900 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-white transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
+          >
+            <span>Send Message<span className="ml-2">→</span></span>
+          </button>
         </form>
       </div>
     </div>

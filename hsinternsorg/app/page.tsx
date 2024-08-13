@@ -1,26 +1,26 @@
 import React from "react";
 import { HoverEffect } from "@/app/components/ui/card-hover-effect"; // Adjust the path if necessary
-import { FiChevronDown } from "react-icons/fi"; // Importing the down arrow icon
+import { FiChevronDown } from 'react-icons/fi';
+
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-gray-50 font-sans">
-      {/* Hero Section */}
-      <div className="min-h-screen w-full bg-white bg-grid-black/[0.2] relative flex items-center justify-center">
+      <div className="h-[50rem] w-full bg-white bg-grid-black/[0.2] relative flex items-center justify-center">
         {/* Radial gradient for the container to give a faded look */}
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_35%,black)]"></div>
 
         {/* Hero Section Content */}
         <div className="relative z-20 text-center px-4 py-16">
           <h1 className="text-neutral-900 md:text-7xl text-4xl font-bold">
-            Teaching students
+            Teaching students life
             <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-neutral-900 via-gray-800 to-blue-500">
-              web-development.
+              changing skills.
             </span>
           </h1>
           <p className="mt-4 text-lg text-neutral-700">
-            By offering them real-world experiences.
+            By offering them hands-on experiences.
           </p>
 
           {/* Apply Now Button */}
@@ -32,16 +32,9 @@ export default function Home() {
         </div>
       </div>
 
-          {/* Down Arrow Icon */}
-          <div className="flex justify-center" style={{ marginTop: '-3rem' }}>
-             <FiChevronDown className="text-neutral-700 animate-bounce" size={24} />
-          </div>
-
-      {/* How it works Section */}
-      <div className="max-w-5xl mx-auto px-8 py-12">
-        <h2 className="text-4xl font-semibold text-neutral-900 text-center">
-          How it works
-        </h2>
+      {/* Down Arrow Icon */} 
+      <div className="flex justify-center" style={{ marginTop: '-3rem' }}> 
+        <FiChevronDown className="text-neutral-700 animate-bounce" size={24} /> 
       </div>
 
       {/* Canvas Reveal Effect Demo */}
@@ -56,7 +49,7 @@ export const projects = [
   {
     title: "1. You'll Learn.",
     description:
-      "Our verified knowledgeable tutors are dedicated to teaching you how to think, design, and code like a web developer.",
+      "Our verified knowledgable tutors are dedicated to teaching you how to think, design, and code like a web developer.",
   },
   {
     title: "2. We'll Test.",
@@ -66,7 +59,7 @@ export const projects = [
   {
     title: "3. They'll Employ",
     description:
-      "Once you've passed our interview we will assign you to a team with one of our tutors to gain experience by helping a non-profit.",
+      "Once you've passeed our interview we will assign you to a team and one of our tutors to gain experience by helping an non-profit. ",
   },
   {
     title: "4. You'll Win",
@@ -76,11 +69,11 @@ export const projects = [
   {
     title: "5. You Can Come Back",
     description:
-      "If you choose to come back, we can verify you as a tutor and you can teach future students and get more experiences at non-profit organizations.",
+      "With your skills, we can verify you as a tutors and you'll teach more students and get more experiences at non-profit organizations.",
   },
   {
     title: "6. Everyone Wins",
     description:
-      "You learn + get hands-on experience and non-profits get a free modern website.",
+      "You learn + get hands-on experience while non-profits get a free modern website. ",
   },
 ];

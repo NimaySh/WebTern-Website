@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react';
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -36,34 +35,55 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const [loading, setLoading] = useState(false);
-
-  const handleNavigationClick = () => {
-    setLoading(true);
-  };
-
-  useEffect(() => {
-    if (loading) {
-      const timer = setTimeout(() => {
-        setLoading(false);
-      }, 1000); // Duration of the animation
-
-      return () => clearTimeout(timer);
-    }
-  }, [loading]);
-
   return (
     <html lang="en">
       <body className={inter.className}>
-        {/* Loading overlay */}
-        <div className={`loading-overlay ${loading ? 'active' : ''}`}></div>
-
         {/* Include the FloatingNav component */}
-        <FloatingNav navItems={navItems} onNavClick={handleNavigationClick} />
-
-        <main className={`fade-in ${!loading ? 'show' : ''}`}>
+        <FloatingNav navItems={navItems} />
+        <main className="flex-grow">
           {children}
         </main>
+        {/* Footer */}
+        <footer className="bg-neutral-900 text-white py-8">
+          <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Column 1 */}
+            <div className="text-center md:text-left">
+              <h5 className="text-lg font-bold mb-4">Company</h5>
+              <ul className="space-y-2">
+                <li>About Us</li>
+                <li>Our Team</li>
+                <li>Careers</li>
+                <li>Contact Us</li>
+              </ul>
+            </div>
+
+            {/* Column 2 */}
+            <div className="text-center">
+              <h5 className="text-lg font-bold mb-4">Services</h5>
+              <ul className="space-y-2">
+                <li>Tutoring</li>
+                <li>Courses</li>
+                <li>Internship Placement</li>
+                <li>Project-Based Learning</li>
+              </ul>
+            </div>
+
+            {/* Column 3 */}
+            <div className="text-center md:text-right">
+              <h5 className="text-lg font-bold mb-4">Follow Us</h5>
+              <ul className="space-y-2">
+                <li>YouTube</li>
+                <li>Twitter</li>
+                <li>LinkedIn</li>
+                <li>Instagram</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="container mx-auto text-center mt-8">
+            <p>© 2024 Internify. All rights reserved.</p>
+          </div>
+        </footer>
       </body>
     </html>
   );
