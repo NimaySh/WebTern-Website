@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import Image from "next/image";
 
 export const FloatingNav = ({
   navItems,
@@ -22,10 +23,8 @@ export const FloatingNav = ({
     const currentScrollY = window.scrollY;
 
     if (currentScrollY > lastScrollY) {
-      // Scrolling down
       setVisible(false);
     } else {
-      // Scrolling up
       setVisible(true);
     }
 
@@ -55,13 +54,25 @@ export const FloatingNav = ({
           duration: 0.2,
         }}
         className={cn(
-          "flex fixed top-10 inset-x-0 mx-auto border border-transparent dark:border-white/[0.2] dark:bg-neutral-900 bg-white shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[5000] py-2 items-center justify-center",
-          "px-4 sm:px-8 lg:px-12 xl:px-16",
-          "max-w-full mx-4 sm:mx-8 lg:mx-12 xl:mx-16",
-          "rounded-lg",  // Rounded rectangle
+          "flex fixed top-10 inset-x-0 mx-auto border border-transparent dark:border-white/[0.2] dark:bg-neutral-900 bg-white shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[5000] py-1 items-center", // Reduced py-2 to py-1
+          "px-2 sm:px-4 lg:px-6 xl:px-8", // Reduced horizontal padding
+          "max-w-full mx-8 sm:mx-10 lg:mx-14 xl:mx-26", // Increased horizontal margins
+          "rounded-lg",
           className
         )}
       >
+        {/* Logo Container */}
+        <div className="flex-shrink-0 mr-8">
+          <Image 
+            src="/WebTern Logo.png" 
+            alt="WebTern Logo" 
+            width={60} // Adjust width to fit the navbar height
+            height={12} // Adjust height to match the navbar height
+            style={{ objectFit: 'contain' }} // Ensure the image fits within the given dimensions
+          />
+        </div>
+        
+        {/* Centered Navigation Items and Button */}
         <div className="flex flex-grow items-center justify-center space-x-6">
           {navItems.map((navItem, idx) => (
             <Link
