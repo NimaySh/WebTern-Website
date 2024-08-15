@@ -13,7 +13,7 @@ export default function Home() {
         {/* Hero Section Content */}
         <div className="relative z-20 text-center px-4 py-16">
           <h1 className="text-neutral-900 md:text-7xl text-4xl font-bold">
-            Teaching students 
+            Teaching students
             <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-neutral-900 via-gray-800 to-blue-500">
               web-development.
@@ -26,27 +26,29 @@ export default function Home() {
           {/* Apply Now Button */}
           <div className="mt-8 flex justify-center">
             <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-neutral-900 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-white transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
-              <span>Apply Now<span className="ml-2">→</span></span>
+              <span>
+                Apply Now
+                <span className="ml-2">→</span>
+              </span>
             </button>
           </div>
         </div>
       </div>
 
-      {/* Down Arrow Icon */} 
-      <div className="flex justify-center" style={{ marginTop: '-4rem' }}> 
-        <FiChevronDown className="text-neutral-700 animate-bounce" size={32} /> 
+      {/* Down Arrow Icon */}
+      <div className="flex justify-center" style={{ marginTop: '-4rem' }}>
+        <FiChevronDown className="text-neutral-700 animate-bounce" size={32} />
       </div>
 
       {/* Section Title for Cards */}
-      <div className="text-center mt-24 mb-8"> {/* Increased margin-top */}
+      <div className="text-center mt-24 mb-8">
         <h2 className="text-neutral-900 text-3xl font-semibold">How it works</h2>
       </div>
 
-
       {/* Canvas Reveal Effect Demo */}
-      <div className="max-w-5xl mx-auto px-8 py-6"> {/* Added padding */}
+      <div className="max-w-5xl mx-auto px-8 py-6">
         <HoverEffect items={projects} />
-      </div>      
+      </div>
     </div>
   );
 }
