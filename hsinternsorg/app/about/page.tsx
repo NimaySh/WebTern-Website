@@ -28,21 +28,26 @@ export default function About() {
         Our Mission
       </h2>
       <p className="mt-4 text-left text-base/6 text-neutral-200">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente consectetur soluta ab est. Ea, dolorum quae esse recusandae facilis tempore quos quis quibusdam officiis quod iusto excepturi doloremque praesentium. Rem.
+        WebTern is an organization dedicated to teaching students life changing skills and providing them real job experience by offering them a chance to help change the world.
       </p>
     </div>
   </WobbleCard>
 
   <WobbleCard containerClassName="col-span-1 bg-neutral-900 min-h-[300px]">
-    <div className="max-w-sm">
-      <h2 className="text-left text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-        Meet the Team
-      </h2>
-      <p className="mt-4 max-w-[26rem] text-left text-base/6 text-neutral-200">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, corporis cum? Ipsa ad repudiandae omnis expedita voluptate ducimus hic aspernatur, officiis magni eius, aliquid iure illum tempore quibusdam vitae exercitationem.
-      </p>
-    </div>
-  </WobbleCard>
+  <div className="max-w-xs">
+    <h2 className="text-left text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+      Meet the Team
+    </h2>
+    <p className="mt-4 max-w-[26rem] text-left text-base/6 text-neutral-200">
+      Under Construction!! <br /><br />
+      <a href="/apply" className="text-blue-700 underline">
+        Apply here 
+      </a>{""}
+       <s></s> to join the team, helping students learn web development and get real experiences at non-profits!
+    </p>
+  </div>
+</WobbleCard>
+
 </div>
 
       </div>

@@ -4,6 +4,7 @@ import "./globals.css";
 import { FloatingNav } from "@/app/components/ui/floating-navbar";
 import { IconHome, IconMessage, IconUser } from "@tabler/icons-react";
 import Head from "next/head"; // Import Head from next/head
+import Link from "next/link";
 
 // Define your navigation items here
 const navItems = [
@@ -59,10 +60,17 @@ export default function RootLayout({
             <div className="text-center md:text-left">
               <h5 className="text-lg font-bold mb-4">Company</h5>
               <ul className="space-y-2">
-                <li>About Us</li>
-                <li>Our Team</li>
-                <li>Careers</li>
-                <li>Contact Us</li>
+              <ul className="space-y-4">
+              <li>
+                <Link href="/about">About Us</Link>
+              </li>
+              <li>
+                <Link href="/about">Our Team</Link>
+              </li>
+              <li>
+                <Link href="/contact">Contact Us</Link>
+              </li>
+              </ul>
               </ul>
             </div>
 
