@@ -30,7 +30,7 @@ export default function About() {
               Our Mission
             </h2>
             <p className="mt-4 text-left text-base/6 text-neutral-200">
-              WebTern is an organization dedicated to teaching students life-changing skills and providing them real job experience by offering them a chance to help change the world.
+              WebTern is an organization dedicated to teaching students life-changing skills, providing them real job experience, and offering them a chance to help change the world.
             </p>
           </div>
         </WobbleCard>
