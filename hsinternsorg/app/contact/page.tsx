@@ -1,5 +1,6 @@
 import React from "react";
 import { FiChevronDown } from 'react-icons/fi';
+
 export default function Contact() {
   return (
     <div className="min-h-screen bg-gray-50 font-sans">
@@ -20,9 +21,9 @@ export default function Contact() {
         </div>
       </div>
 
-      {/* Down Arrow Icon */} 
-      <div className="flex justify-center" style={{ marginTop: '-4rem' }}> 
-        <FiChevronDown className="text-neutral-700 animate-bounce" size={32} /> 
+      {/* Down Arrow Icon */}
+      <div className="flex justify-center" style={{ marginTop: '-4rem' }}>
+        <FiChevronDown className="text-neutral-700 animate-bounce" size={32} />
       </div>
 
       {/* Contact Form Section */}
@@ -58,16 +59,24 @@ export default function Contact() {
             rows={6}
             required
           ></textarea>
-          <button
-            type="submit"
-            className="inline-flex h-12 items-center justify-center rounded-md border border-neutral-900 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-white transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
-          >
-            <span>Send Message<span className="ml-2">→</span></span>
-          </button>
+          <button type= "submit" className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-neutral-900 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-white transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+              <span>
+                Send Message  
+                <span className="ml-2">→</span>
+              </span>
+            </button>
         </form>
+
+        {/* Contact Information Section */}
+        <div className="mt-8 text-center">
+          <p className="text-neutral-700">
+            You can also reach us at:
+          </p>
+          <p className="text-neutral-900 font-semibold">
+            Email: team@webtern.org
+          </p>
+        </div>
       </div>
     </div>
-
-    
   );
 }
