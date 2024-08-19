@@ -39,14 +39,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
-        {/* Favicon */}
-        <link rel="icon" href="/WebTern Logo.png" type="image/png" sizes="96x48" />
-        <link rel="icon" href="/WebTern Logo.png" type="image/png" sizes="32x32" />
-        {/* Additional meta tags */}
-        <meta name="description" content="Learn how to code websites and get employed!" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </Head>
+      
       <body className={inter.className}>
         {/* Include the FloatingNav component */}
         <FloatingNav navItems={navItems} />
