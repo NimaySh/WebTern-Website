@@ -32,6 +32,56 @@ export const metadata: Metadata = {
   description: "Learn how to code websites and get employed!",
 };
 
+// Moving banner component
+const MovingBanner = () => {
+  return (
+    <div className="w-full bg-blue-600 text-white py-1 overflow-hidden">
+      <div className="whitespace-nowrap animate-marquee flex items-center" style={{ transform: 'translateY(5px)' }}>
+        <span className="mx-4">
+          ✨ LEADERSHIP APPLICATIONS ARE OPEN
+        </span>
+        <span className="mx-4 text-center">|</span>
+        <span className="mx-4">
+          ✨ LEADERSHIP APPLICATIONS ARE OPEN
+        </span>
+        <span className="mx-4 text-center">|</span>
+        <span className="mx-4">
+          ✨ LEADERSHIP APPLICATIONS ARE OPEN
+        </span>
+        <span className="mx-4 text-center">|</span>
+        <span className="mx-4">
+          ✨ LEADERSHIP APPLICATIONS ARE OPEN
+        </span>
+        <span className="mx-4 text-center">|</span>
+        <span className="mx-4">
+          ✨ LEADERSHIP APPLICATIONS ARE OPEN
+        </span>
+        <span className="mx-4 text-center">|</span>
+        <span className="mx-4">
+          ✨ LEADERSHIP APPLICATIONS ARE OPEN
+        </span>
+        <span className="mx-4 text-center">|</span>
+        <span className="mx-4">
+          ✨ LEADERSHIP APPLICATIONS ARE OPEN
+        </span>
+        <span className="mx-4 text-center">|</span>
+        <span className="mx-4">
+          ✨ LEADERSHIP APPLICATIONS ARE OPEN
+        </span>
+        <span className="mx-4 text-center">|</span>
+        <span className="mx-4">
+          ✨ LEADERSHIP APPLICATIONS ARE OPEN
+        </span>
+        <span className="mx-4 text-center">|</span>
+        <span className="mx-4">
+          ✨ LEADERSHIP APPLICATIONS ARE OPEN
+        </span>
+      </div>
+    </div>
+  );
+};
+
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -39,10 +89,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      
       <body className={inter.className}>
         {/* Include the FloatingNav component */}
         <FloatingNav navItems={navItems} />
+        {/* Moving banner under the navbar */}
+        <MovingBanner />
         <main className="flex-grow">
           {children}
         </main>
@@ -53,17 +104,15 @@ export default function RootLayout({
             <div className="text-center md:text-left">
               <h5 className="text-lg font-bold mb-4">Company</h5>
               <ul className="space-y-2">
-              <ul className="space-y-4">
-              <li>
-                <Link href="/about">About Us</Link>
-              </li>
-              <li>
-                <Link href="/about">Our Team</Link>
-              </li>
-              <li>
-                <Link href="/contact">Contact Us</Link>
-              </li>
-              </ul>
+                <li>
+                  <Link href="/about">About Us</Link>
+                </li>
+                <li>
+                  <Link href="/about">Our Team</Link>
+                </li>
+                <li>
+                  <Link href="/contact">Contact Us</Link>
+                </li>
               </ul>
             </div>
 
