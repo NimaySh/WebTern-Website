@@ -1,7 +1,8 @@
 import React from "react";
 import { HoverEffect } from "@/app/components/ui/card-hover-effect"; // Adjust the path if necessary
 import { FiChevronDown } from 'react-icons/fi';
-
+import Link from 'next/link';
+ 
 export default function Home() {
   return (
     <div className="bg-gray-50 font-sans">
@@ -23,7 +24,7 @@ export default function Home() {
             By offering them real world experiences.
           </p>
 
-          {/* Apply Now Button */}
+        <Link href="https://forms.gle/qTvj5pUV1aAfJ3L5A">
           <div className="mt-8 flex justify-center">
             <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-neutral-900 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-white transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
               <span>
@@ -32,9 +33,10 @@ export default function Home() {
               </span>
             </button>
           </div>
+        </Link>
+
         </div>
       </div>
-
       {/* Down Arrow Icon */}
       <div className="flex justify-center" style={{ marginTop: '-4rem' }}>
         <FiChevronDown className="text-neutral-700 animate-bounce" size={32} />
