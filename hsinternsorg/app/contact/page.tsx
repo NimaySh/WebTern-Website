@@ -3,10 +3,10 @@ import { FiChevronDown } from 'react-icons/fi';
 
 export default function Contact() {
   return (
-    <div className="min-h-screen bg-gray-50 font-sans">
+    <div className="min-h-screen bg-white font-sans">
       <div className="h-[50rem] w-full bg-white bg-grid-black/[0.2] relative flex items-center justify-center">
         {/* Radial gradient for the container to give a faded look */}
-        <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_35%,black)]"></div>
+        <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_5%,black)]"></div>
 
         {/* Hero Section Content */}
         <div className="relative z-20 text-center px-4 py-16">
