@@ -73,7 +73,7 @@ export default function Contact() {
             You can also reach us at:
           </p>
           <p className="text-neutral-900 font-semibold">
-            Email: team@webtern.org
+            Email: thewebtern@gmail.com
           </p>
         </div>
       </div>
