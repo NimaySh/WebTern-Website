@@ -141,6 +141,8 @@ export default function RootLayout({
 
           <div className="container mx-auto text-center mt-8">
             <p>© 2024 WebTern. All rights reserved.</p>
+            <br />
+            <p>Website owned and mantained by Nimay Sharma</p>
           </div>
         </footer>
       </body>
