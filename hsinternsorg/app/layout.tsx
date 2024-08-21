@@ -37,49 +37,50 @@ const MovingBanner = () => {
   return (
     <div className="w-full bg-blue-600 text-white py-1 overflow-hidden">
       <div className="whitespace-nowrap animate-marquee flex items-center" style={{ transform: 'translateY(5px)' }}>
-        <span className="mx-4">
+        <a href="https://forms.gle/nMEknk1vSW5Q4Jv9A" className="mx-4">
           ✨ LEADERSHIP APPLICATIONS ARE OPEN
-        </span>
+        </a>
         <span className="mx-4 text-center">|</span>
-        <span className="mx-4">
+        <a href="https://forms.gle/nMEknk1vSW5Q4Jv9A" className="mx-4">
           ✨ LEADERSHIP APPLICATIONS ARE OPEN
-        </span>
+        </a>
         <span className="mx-4 text-center">|</span>
-        <span className="mx-4">
+        <a href="https://forms.gle/nMEknk1vSW5Q4Jv9A" className="mx-4">
           ✨ LEADERSHIP APPLICATIONS ARE OPEN
-        </span>
+        </a>
         <span className="mx-4 text-center">|</span>
-        <span className="mx-4">
+        <a href="https://forms.gle/nMEknk1vSW5Q4Jv9A" className="mx-4">
           ✨ LEADERSHIP APPLICATIONS ARE OPEN
-        </span>
+        </a>
         <span className="mx-4 text-center">|</span>
-        <span className="mx-4">
+        <a href="https://forms.gle/nMEknk1vSW5Q4Jv9A" className="mx-4">
           ✨ LEADERSHIP APPLICATIONS ARE OPEN
-        </span>
+        </a>
         <span className="mx-4 text-center">|</span>
-        <span className="mx-4">
+        <a href="https://forms.gle/nMEknk1vSW5Q4Jv9A" className="mx-4">
           ✨ LEADERSHIP APPLICATIONS ARE OPEN
-        </span>
+        </a>
         <span className="mx-4 text-center">|</span>
-        <span className="mx-4">
+        <a href="https://forms.gle/nMEknk1vSW5Q4Jv9A" className="mx-4">
           ✨ LEADERSHIP APPLICATIONS ARE OPEN
-        </span>
+        </a>
         <span className="mx-4 text-center">|</span>
-        <span className="mx-4">
+        <a href="https://forms.gle/nMEknk1vSW5Q4Jv9A" className="mx-4">
           ✨ LEADERSHIP APPLICATIONS ARE OPEN
-        </span>
+        </a>
         <span className="mx-4 text-center">|</span>
-        <span className="mx-4">
+        <a href="https://forms.gle/nMEknk1vSW5Q4Jv9A" className="mx-4">
           ✨ LEADERSHIP APPLICATIONS ARE OPEN
-        </span>
+        </a>
         <span className="mx-4 text-center">|</span>
-        <span className="mx-4">
+        <a href="https://forms.gle/nMEknk1vSW5Q4Jv9A" className="mx-4">
           ✨ LEADERSHIP APPLICATIONS ARE OPEN
-        </span>
+        </a>
       </div>
     </div>
   );
 };
+
 
 
 export default function RootLayout({

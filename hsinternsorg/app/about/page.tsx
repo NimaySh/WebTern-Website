@@ -42,7 +42,7 @@ export default function About() {
             </h2>
             <p className="mt-4 max-w-[26rem] text-left text-base/6 text-neutral-200">
               Under Construction!! <br /><br />
-              <a href="/apply" className="text-blue-700 underline">
+              <a href="https://forms.gle/nMEknk1vSW5Q4Jv9A" className="text-blue-700 underline">
                 Apply here
               </a>{" "}
               to join the team, helping students learn web development and get real experiences at non-profits!
