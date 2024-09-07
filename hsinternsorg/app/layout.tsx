@@ -5,7 +5,7 @@ import { FloatingNav } from "@/app/components/ui/floating-navbar";
 import { IconHome, IconMessage, IconUser } from "@tabler/icons-react";
 import Head from "next/head"; // Import Head from next/head
 import Link from "next/link";
-
+import { Analytics } from "@vercel/analytics/react"
 // Define your navigation items here
 const navItems = [
   {
@@ -151,6 +151,7 @@ export default function RootLayout({
             <p>Website owned and mantained by Nimay Sharma</p>
           </div>
         </footer>
+        <Analytics />
       </body>
     </html>
   );
