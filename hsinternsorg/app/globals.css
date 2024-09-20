@@ -39,6 +39,23 @@
     transform: translateX(-50%);
   }
 }
+@media (max-width: 768px) {
+  nav .flex {
+    flex-wrap: wrap;
+  }
+
+  .ml-10 {
+    margin-left: 0;
+  }
+
+  .space-x-4 {
+    margin-right: 0;
+  }
+
+  nav .flex.items-baseline {
+    justify-content: center;
+  }
+}
 
 .animate-marquee {
   display: flex;

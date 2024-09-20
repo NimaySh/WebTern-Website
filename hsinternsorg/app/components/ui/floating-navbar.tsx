@@ -67,9 +67,9 @@ export const FloatingNav = ({
           <Image 
             src="/WebTern Logo.png" 
             alt="WebTern Logo" 
-            width={120} // Adjusted width
-            height={40} // Adjusted height
-            style={{ objectFit: 'contain' }} // Ensure the image fits within the given dimensions
+            width={120}
+            height={40}
+            style={{ objectFit: 'contain' }}
           />
         </div>
         
