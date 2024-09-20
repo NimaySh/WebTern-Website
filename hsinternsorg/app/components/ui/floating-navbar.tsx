@@ -67,11 +67,13 @@ export const FloatingNav = ({
           <Image 
             src="/WebTern Logo.png" 
             alt="WebTern Logo" 
-            width={120}
-            height={40}
-            style={{ objectFit: 'contain' }}
+            width={120} 
+            height={40} 
+            className="w-[120px] h-[40px] sm:w-[100px] sm:h-[33px] md:w-[90px] md:h-[30px] lg:w-[120px] lg:h-[40px]"
+            style={{ objectFit: 'contain' }} 
           />
         </div>
+
         
         {/* Centered Navigation Items and Button */}
         <div className="flex flex-grow items-center justify-center space-x-6">
